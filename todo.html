@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="../src/assets/perfil.jpeg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./src/index.css">
+  <title>MJHC - Solo HTML</title>
+  <!--<link rel="icon" href="src/assets/perfil.jpeg" />-->
+</head>
+
+<body>
+  <!--NarBar-->
+  <nav class="navbar navbar-light" style="background-color: #C71C81!important;">
+    <img src="./src/assets/logo.png" id="logo" width="130" />
+    <a class="navbar-brand" href="#/inicio" style="color: white;">Inicio</a>
+    <a class="navbar-brand" href="#/perfil" style="color: white;">Perfil</a>
+    <a class="navbar-brand" href="#/experiencia" style="color: white;">Experiencia</a>
+    <a class="navbar-brand" href="#/estudios" style="color: white;">Estudios</a>
+    <a class="navbar-brand" href="#/portafolio" style="color: white;">Portafolio</a>
+    <a class="navbar-brand" href="#/contacto" style="color: white;">Contacto</a>
+  </nav>
+  <!--SECCIÓN DE INICIO-->
+  <div class="card border-0" id="inicio"><br>
+    <img src="./src/assets/perfil.jpeg" class="rounded-circle img-fluid mx-auto" id="foto" />
+    <div class="card-body">
+      <p class="card-title mx-auto" id="presentacion">Soy Melanny 😊</p>
+      <p class="card-title mx-auto" id="saludo">Bienvenido a mi página 👋</p>
+      <p class="card-title mx-auto" id="descripcion">El talento gana partidos ⚽, pero el trabajo en equipo y la
+        inteligencia
+        ganan campeonatos 🏆🥇
+      </p><br>
+      <div class="d-flex justify-content-center">
+        <a class="btn btn-primary btn-lg font-weight-bold" href="https://github.com/meljuc9" type="button"
+          id="btnPerfil">
+          <i class="fa-brands fa-github"></i> Perfil
+        </a>
+        <a class="btn btn-primary btn-lg font-weight-bold" href="https://github.com/meljuc9" type="button"
+          id="btnGithub">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+    <br><br>
+  </div>
+  <!--SECCIÓN DE PERFIL-->
+  <div class="card border-0" id="perfil">
+    <div class="card-group">
+      <div class="col-md-8">
+        <div class="card-body"><br><br>
+          <li class="badge badge-pill badge-primary font-weight-bold" aria-current="page" id="tituloSeccionesConColor">
+            👩🏻‍🎓 Perfil profesional
+          </li><br><br>
+          <h4 class="card-text font-weight-bold" id="perfilPerfil">Analista 🔍 y Desarrolladora de Sistemas de
+            Información 📱💻</h4><br>
+          <p class="card-text text-justify" id="descripcionPerfil">
+            Tecnóloga en Análisis y Desarrollo de Sistemas de Información con conocimientos en Python, Java, HTML,
+            CSS, Typescript, .NET, PHP, MySQL, SQL, Framework Django, Framework Laravel, Framework Angular,
+            Framework React, GIT, creación de robots, documentación de manuales y resultados de pruebas.
+            Así mismo con experiencia laboral de más de dos años en el desarrollo de software hasta la creación
+            de documentación para el levantamiento de requerimientos y con destrezas o habilidades en
+            resolución de problemas, autodidacta, adaptabilidad al cambio y responsable
+          </p><br><br>
+        </div>
+      </div>
+      <div class="col-md-4 justify-content-center"><br><br>
+        <img src="./src/assets/lenguajes_de_programación.jpg" class="img-fluid mx-auto" />
+      </div>
+      <br>
+    </div>
+  </div>
+  <!--SECCIÓN DE EXPERIENCIA-->
+  <div class="card border-0" id="empresas"><br>
+    <div class="card-body">
+      <li class="badge badge-pill badge-primary font-weight-bold" aria-current="page" id="tituloSecciones">
+        👩🏻‍💻 Experiencia laboral
+      </li><br><br>
+    </div>
+    <!--Empresas-->
+    <div class="d-flex justify-content-center">
+      <div class="card-deck" id="cardEmpresas">
+        <!--CAJA HONOR-->
+        <div class="card"><br><br>
+          <div class="d-flex justify-content-center">
+            <img class="card-img-top"
+              src="data:image/png;base64,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"
+              id="imgEmpresas">
+          </div>
+          <div class="card-body">
+            <span class="badge badge-pill badge-info" id="viñetasEmpresas">Sector público</span>
+            <span class="badge badge-pill badge-warning" id="viñetasEmpresas">Diciembre 2021 - Actualmente</span>
+            <br><br>
+            <h5 class="card-title">
+              <b>Cargo: </b>Técnico I - Desarrolladora
+            </h5>
+            <h5 class="card-title">
+              <b>Empresa: </b>Caja Honor
+            </h5>
+            <p class="card-text">
+            <h5 class="card-title"><b>Funciones:</b></h5>
+            <li>Desarrollar scripts de bases de datos para solucionar tickets.</li>
+            <li>Brindar soporte en el aplicativo CORE de la compañía.</li>
+            <li>Pruebas en el aplicativo CORE de la compañía.</li>
+            <li>Creación de bots para la automatización de los procesos en seguir el paso para la exportación de
+              informes.</li>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+  </div>
+  <!--SECCIÓN DE ESTUDIOS-->
+  <div class="card border-0" id="estudios"><br>
+    <div class="card-group">
+      <div class="col-md-8">
+        <div class="card-body">
+          <li class="badge badge-pill badge-primary font-weight-bold" aria-current="page" id="tituloSeccionesConColor">
+            📖 Educación
+          </li><br><br>
+        </div>
+      </div>
+      <!--Estudios-->
+      <div class="d-flex justify-content-center">
+        <div class="card-deck" id="cardEstudios">
+          <!--Tecnólogo en Análisis y Desarrollo de SI-->
+          <div class="card"><br><br>
+            <div class="d-flex justify-content-center ">
+              <img class="card-img-top"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/1200px-Sena_Colombia_logo.svg.png"
+                id="imgEmpresas">
+            </div>
+            <div class="card-body"><br>
+              <span class="badge badge-pill badge-info fs-6" id="viñetasEmpresas">Educación Formal</span>
+              <span class="badge badge-pill badge-warning fs-6" id="viñetasEmpresas">Abril 2019 - Diciembre 2020</span>
+              <br><br>
+              <h5 class="card-title">
+                <b>Tecnólogo en Análisis y Desarrollo de SI</b>
+              </h5>
+              <h5 class="card-title">
+                SENA
+              </h5>
+            </div>
+          </div>
+          <!--Técnico en Programación de Software-->
+          <div class="card"><br><br>
+            <div class="d-flex justify-content-center">
+              <img class="card-img-top"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/1200px-Sena_Colombia_logo.svg.png"
+                id="imgEmpresas">
+            </div>
+            <div class="card-body"><br>
+              <span class="badge badge-pill badge-info" id="viñetasEmpresas">Educación Formal</span>
+              <span class="badge badge-pill badge-warning" id="viñetasEmpresas">Abril 2017 - Noviembre 2018</span>
+              <br><br>
+              <h5 class="card-title">
+                <b>Técnico en Programación de Software</b>
+              </h5>
+              <h5 class="card-title">
+                SENA
+              </h5>
+            </div>
+          </div>
+          <!--Bachiller Académico-->
+          <div class="card"><br><br>
+            <div class="d-flex justify-content-center">
+              <img class="card-img-top"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/1200px-Sena_Colombia_logo.svg.png"
+                id="imgEmpresas">
+            </div>
+            <div class="card-body"><br>
+              <span class="badge badge-pill badge-info" id="viñetasEmpresas">Educación Formal</span>
+              <span class="badge badge-pill badge-warning" id="viñetasEmpresas">2007 - 2018</span>
+              <br><br>
+              <h5 class="card-title">
+                <b>Bachiller Académico</b>
+              </h5>
+              <h5 class="card-title">
+                SENA
+              </h5>
+            </div>
+          </div>
+          <!--Desarrollo Front-End con ReactJS-->
+          <div class="card"><br><br>
+            <div class="d-flex justify-content-center">
+              <img class="card-img-top"
+                src="https://i1.wp.com/colombia.marialuisa.foundation/wp-content/uploads/sites/19/2020/11/favicon-fimlm.png?fit=512%2C512&ssl=1"
+                id="imgEmpresas">
+            </div>
+            <div class="card-body"><br>
+              <span class="badge badge-pill badge-info" id="viñetasEmpresas">Educación Informal</span>
+              <span class="badge badge-pill badge-warning" id="viñetasEmpresas">Junio 2022 - Actualmente</span>
+              <br><br>
+              <h5 class="card-title">
+                <b>Desarrollo Front-End con ReactJS</b>
+              </h5>
+              <h5 class="card-title">
+                Fundación Maria Luisa de Moreno - LiveVox de Colombia SAS
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div><br>
+      <!--Estudios-->
+      <div class="d-flex justify-content-center">
+        <div class="card-deck" id="cardEstudios">
+          <!--Tecnólogo en Análisis y Desarrollo de SI-->
+          <div class="card"><br><br>
+            <div class="d-flex justify-content-center">
+              <img class="card-img-top"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/1200px-Sena_Colombia_logo.svg.png"
+                id="imgEmpresas">
+            </div>
+            <div class="card-body"><br>
+              <span class="badge badge-pill badge-info" id="viñetasEmpresas">Educación Formal</span>
+              <span class="badge badge-pill badge-warning" id="viñetasEmpresas">Abril 2019 - Diciembre 2020</span>
+              <br><br>
+              <h5 class="card-title">
+                <b>Tecnólogo en Análisis y Desarrollo de SI</b>
+              </h5>
+              <h5 class="card-title">
+                SENA
+              </h5>
+            </div>
+          </div>
+          <!--Técnico en Programación de Software-->
+          <div class="card"><br><br>
+            <div class="d-flex justify-content-center">
+              <img class="card-img-top"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/1200px-Sena_Colombia_logo.svg.png"
+                id="imgEmpresas">
+            </div>
+            <div class="card-body"><br>
+              <span class="badge badge-pill badge-info" id="viñetasEmpresas">Educación Formal</span>
+              <span class="badge badge-pill badge-warning" id="viñetasEmpresas">Abril 2017 - Noviembre 2018</span>
+              <br><br>
+              <h5 class="card-title">
+                <b>Técnico en Programación de Software</b>
+              </h5>
+              <h5 class="card-title">
+                SENA
+              </h5>
+            </div>
+          </div>
+          <!--Bachiller Académico-->
+          <div class="card"><br><br>
+            <div class="d-flex justify-content-center">
+              <img class="card-img-top"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/1200px-Sena_Colombia_logo.svg.png"
+                id="imgEmpresas">
+            </div>
+            <div class="card-body"><br>
+              <span class="badge badge-pill badge-info" id="viñetasEmpresas">Educación Formal</span>
+              <span class="badge badge-pill badge-warning" id="viñetasEmpresas">2007 - 2018</span>
+              <br><br>
+              <h5 class="card-title">
+                <b>Bachiller Académico</b>
+              </h5>
+              <h5 class="card-title">
+                SENA
+              </h5>
+            </div>
+          </div>
+          <!--Desarrollo Front-End con ReactJS-->
+          <div class="card"><br><br>
+            <div class="d-flex justify-content-center">
+              <img class="card-img-top"
+                src="https://i1.wp.com/colombia.marialuisa.foundation/wp-content/uploads/sites/19/2020/11/favicon-fimlm.png?fit=512%2C512&ssl=1"
+                id="imgEmpresas">
+            </div>
+            <div class="card-body"><br>
+              <span class="badge badge-pill badge-info" id="viñetasEmpresas">Educación Informal</span>
+              <span class="badge badge-pill badge-warning" id="viñetasEmpresas">Junio 2022 - Actualmente</span>
+              <br><br>
+              <h5 class="card-title">
+                <b>Desarrollo Front-End con ReactJS</b>
+              </h5>
+              <h5 class="card-title">
+                Fundación Maria Luisa de Moreno - LiveVox de Colombia SAS
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div><br>
+    </div>
+  </div>
+  <!--SECCIÓN DE PORTAFOLIO-->
+  <div class="card border-0" id="portafolio">
+    <div class="card-body">
+      <li class="badge badge-pill badge-primary font-weight-bold" aria-current="page" id="tituloSecciones">
+        📚 Portafolio de proyectos
+      </li><br><br>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body"><br>
+            <div class="d-flex justify-content-center">
+              <img class="card-img-top" src="./src/assets/toDoList.png " id="imgPortafolio">
+            </div><br>
+            <h5 class="card-title">App To Do</h5>
+            <p class="card-text"><b>Descripción: </b>
+              Una aplicación que permite realizar un CRUD completo (Crear, leer, actualizar y eliminar)</p>
+              <h6>
+                <b>Utilizando las tecnologías de:</b>
+                <span class="badge rounded-pill bg-danger text-light">JavaScript</span>
+                <span class="badge rounded-pill bg-danger text-light">CSS</span>
+                <span class="badge rounded-pill bg-danger text-light">HTML</span>
+              </h6><br>
+              <a href="https://6323e80e5ddea74bc0b614cd--legendary-tiramisu-231d7a.netlify.app/" class="btn btn-primary">Vista
+                previa</a>
+              <a href="https://github.com/meljuc9/Modulo3Unidad3" class="btn btn-primary">Código</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body"><br>
+            <div class="d-flex justify-content-center">
+              <img class="card-img-top" src="./src/assets/heroes.jpg " id="imgPortafolio">
+            </div><br>
+            <h5 class="card-title">App Super Heroes</h5>
+            <p class="card-text"><b>Descripción: </b>
+              Una aplicación que permite realizar un CRUD completo (Crear, leer, actualizar y eliminar)</p>
+              <h6>
+                <b>Utilizando las tecnologías de:</b>
+                <span class="badge rounded-pill bg-danger text-light">JavaScript</span>
+                <span class="badge rounded-pill bg-danger text-light">CSS</span>
+                <span class="badge rounded-pill bg-danger text-light">HTML</span>
+              </h6><br>
+              <a href="https://6323e80e5ddea74bc0b614cd--legendary-tiramisu-231d7a.netlify.app/" class="btn btn-primary">Vista
+                previa</a>
+              <a href="https://github.com/meljuc9/app-to-do-list" class="btn btn-primary">Código</a>
+          </div>
+        </div>
+      </div>
+    </div><br><br>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body"><br>
+            <div class="d-flex justify-content-center">
+              <img class="card-img-top" src="./src/assets/clima.jpg " id="imgPortafolio">
+            </div><br>
+            <h5 class="card-title">App Clima</h5>
+            <p class="card-text"><b>Descripción: </b>
+              Una aplicación que permite realizar la busqueda de los distintos climas a nivel mundial o local</p>
+              <h6>
+                <b>Utilizando las tecnologías de:</b>
+                <span class="badge rounded-pill bg-danger text-light">JavaScript</span>
+                <span class="badge rounded-pill bg-danger text-light">CSS</span>
+                <span class="badge rounded-pill bg-danger text-light">HTML</span>
+              </h6><br>
+              <a href="https://app-clima-vue.web.app/" class="btn btn-primary">Vista
+                previa</a>
+              <a href="https://github.com/meljuc9/app-clima" class="btn btn-primary">Código</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body"><br>
+            <div class="d-flex justify-content-center">
+              <img class="card-img-top" src="./src/assets/landing.jpg " id="imgPortafolio">
+            </div><br>
+            <h5 class="card-title">Landing Page</h5>
+            <p class="card-text"><b>Descripción: </b>
+              Una aplicación que permite realizar un CRUD completo (Crear, leer, actualizar y eliminar)</p>
+              <h6>
+                <b>Utilizando las tecnologías de:</b>
+                <span class="badge rounded-pill bg-danger text-light">JavaScript</span>
+                <span class="badge rounded-pill bg-danger text-light">CSS</span>
+                <span class="badge rounded-pill bg-danger text-light">HTML</span>
+              </h6><br>
+              <a href="https://6323e80e5ddea74bc0b614cd--legendary-tiramisu-231d7a.netlify.app/" class="btn btn-primary">Vista
+                previa</a>
+              <a href="https://github.com/meljuc9/Modulo3Unidad3" class="btn btn-primary">Código</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

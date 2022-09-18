@@ -1,32 +1,23 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "bootstrap/dist/css/bootstrap";
+@import 'bootstrap/dist/css/bootstrap.min.css';
 
-:root {
-  background-color: #ccc;
-}
-
-section {
-  display: flex;
-  place-items: center;
-  height: 100vh;
-}
-
-.nav {
+#navbar {
   display: flex;
   align-items: center;
   position: -webkit-sticky;
   position: sticky;
   top: -5px;
   z-index: 2;
-  height: 70px;
-  min-height: 70px;
-  width: calc(100% - 1.5rem);
-  background-color: #fff;
+  height: 7em;
+  min-height: 7em;
+  width: 100%;
+  background-color: #520565!important;
   padding: 0 1rem;
   box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
 }
-
 .nav__container {
   display: flex;
   flex-flow: row nowrap;
@@ -37,26 +28,204 @@ section {
   margin: 0 auto;
   position: relative;
 }
-
 .nav__container__actions {
   display: inline-flex;
   flex-flow: row nowrap;
-  padding-left: 50px;
+  padding-left: 500px;
   flex: 1;
 }
-
 .active {
   font-weight: bold;
+  text-shadow:  0 0 10px;
+  font-size: 1.5em;
 }
-
 ul {
   display: flex;
   gap: 1rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   list-style: none;
   padding: 0;
 }
-
 a {
   cursor: pointer;
+}
+#logo{
+  align-items: center;
+  display:block;
+  width: 10em;
+  text-shadow:  0 0 30px;
+}
+#tituloSeccionesConColor{
+  font-size: 1.2em;
+  text-shadow:  0 0 30px;
+  text-decoration: underline;
+  background-color: #ff0095;
+  color: white;
+  margin-left: 1em;
+  width: 15em;
+  height: 1.8em;
+
+}
+#tituloSecciones{
+  float: right;
+  font-size: 1.2em;
+  text-shadow:  0 0 30px;
+  text-decoration: underline;
+  background-color: #ff0095;
+  color: white;
+  margin-right: 1em;
+  width: 15em;
+  height: 1.8em;
+}
+/*************************** ESTILOS INICIO ***************************/
+#inicio{
+  background-image: url(assets/fondo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  /*background-image: linear-gradient(white, rgb(255, 219, 244));*/
+}
+#foto{
+  width: 20em;
+  height: 20em;
+}
+#presentacion{
+  font-family: 'Poppins', sans-serif;
+  color: #690083;
+  font-size: 3.1em;
+  font-weight: bold;
+  text-align: center;
+  text-shadow:  0 0 50px;
+}
+#presentacion:hover{
+  color: #7e00c2;
+}
+#saludo{
+  font-family: 'Poppins', sans-serif;
+  color: #ff0095;
+  font-size: 2.9em;
+  font-weight: bold;
+  text-align: center;
+  text-shadow:  0 0 30px;
+}
+#saludo:hover{
+  color: #C71C81;
+}
+#descripcion{
+  font-size: 2em;
+  font-family: 'Poppins', sans-serif;
+  text-align: center; 
+  color: black;
+  font-weight: bold;
+}
+#btnPerfil{
+  text-align: center;
+  font-weight: bold;
+  overflow: hidden;
+  color: white;
+  width: 8em;
+  font-size: 1.2em;
+  background-color: #ff0095;
+  border-color: #ff0095;
+  text-shadow:  0 0 30px;
+}
+#btnPerfil:hover{
+  background-color: #C71C81;
+  border-color: #C71C81;
+}
+#btnGithub{
+  text-align: center;
+  font-weight: bold;
+  overflow: hidden;
+  color: white;
+  width: 8em;
+  margin-left: 2%;
+  font-size: 1.2em;
+  background-color: #7e00c2;
+  border-color: #7e00c2;
+  text-shadow:  0 0 30px;
+}
+#btnGithub:hover{
+  background-color: #3D0859;
+  border-color: #3D0859;
+}
+/*************************** FIN ESTILOS INICIO ***************************/
+
+/*************************** ESTILOS PERFIL ***************************/
+#perfil{
+  background-color: #520565;
+}
+#perfilPerfil{
+  font-family: 'Poppins', sans-serif;
+  color: #ffc6e7;
+  font-size: 1.8em;
+  text-shadow:  0 0 30px;
+  font-weight: bold;
+  margin-left: 1em;
+}
+#descripcionPerfil{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 1.4em;
+  margin-left: 1em;
+}
+/*************************** FIN PERFIL ***************************/
+
+/*************************** ESTILOS EXPERIENCIA LABORAL ***************************/
+#empresas{
+  background-image: url(assets/fondo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  /*background-image: linear-gradient(white, rgb(255, 219, 244));*/
+}
+#cardEmpresas{
+  width: 70%;
+}
+#imgEmpresas{
+  width: 30%;
+}
+.actividadExperiencia{
+  margin-left: 22px;
+}
+#viñetasEmpresaSector{
+  font-size: 0.7em;
+  background-color: #ff0095;
+  width: 16em;
+  height: 1.8em;
+  text-align: center;
+}
+
+#viñetasEmpresaFecha{
+  font-size: 0.7em;
+  background-color: #520565;
+  width: 16em;
+  height: 1.8em;
+  text-align: center;
+  margin-right: 1em;
+}
+
+/*************************** FIN EXPERIENCIA LABORAL ***************************/
+
+/*************************** ESTILOS ESTUDIOS ***************************/
+#estudios{
+  background-color: #C71C81;
+}
+#cardEstudios{
+  width: 90%;
+}
+/*************************** FIN ESTILOS ESTUDIOS ***************************/
+
+/*************************** ESTILOS PROTAFOLIO ***************************/
+#portafolio{
+  background-image: url(assets/fondo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  /*background-image: linear-gradient(white, rgb(255, 219, 244));*/
+}
+
+#imgPortafolio{
+  width: 70%;
+  height: 100%;
 }
