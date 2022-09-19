@@ -244,8 +244,27 @@ a {
   background-size: 100%;
   /*background-image: linear-gradient(white, rgb(255, 219, 244));*/
 }
-
-#imgPortafolio{
-  width: 70%;
-  height: 100%;
+#tituloPortafolio{
+  font-family: 'Poppins', sans-serif;
+  color: #ff0095;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  text-shadow:  0 0 30px;
+}
+#tituloPortafolio:hover{
+  color: #C71C81;
+}
+#descripcionPortafolio{
+  font-size: 1.4em;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify; 
+  color: black;
+}
+#metodologiaPortafolio{
+  font-size: 0.9em;
+  background-color: #520565;
+  width: 30em;
+  height: 1.8em;
+  text-align: start;
 }

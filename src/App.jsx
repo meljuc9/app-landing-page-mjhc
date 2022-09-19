@@ -1,8 +1,8 @@
 import {} from "./index.css";
 import Navbar from "./components/Navbar";
-import { InicioPage } from "./components/Inicio/InicioPage";
-import { PerfilPage } from "./components/perfil/PerfilPage";
-import { ExperienciaPage } from "./components/experiencia/ExperienciaPage";
+import { InicioPage } from "./pages/InicioPage";
+import { PerfilPage } from "./pages/PerfilPage";
+import { ExperienciaPage } from "./pages/ExperienciaPage";
 import { EstudiosPage } from "./pages/EstudiosPage";
 import { PortafolioPage } from "./pages/PortafolioPage";
 import { ContactoPage } from "./pages/ContactoPage";

@@ -1,19 +1,19 @@
-import React from 'react'
-import { MyCard } from "../components/MyCard";
-import { proyectos } from "../database/proyectos";
+import { MyPortafolio } from "../components/MyPortafolio";
+import { portafolio } from "../database/portafolio";
 
 export const PortafolioPage = () => {
   return (
     <>
     <h1 className='font-bold text-2xl'>Portafolio</h1>
-      {proyectos.map((proyecto) => (
-        <MyCard
+      {portafolio.map((proyecto) => (
+        <MyPortafolio
           key={proyecto.id}
-          url={proyecto.url}
-          titulo={proyecto.titulo}
-          descripcion={proyecto.descripcion}
-          url_preview={proyecto.url_preview}
-          url_github={proyecto.url_github}
+          imagenPortafolio={proyecto.imagenPortafolio}
+          tituloPortafolio={proyecto.tituloPortafolio}
+          descripcionPortafolio={proyecto.descripcionPortafolio}
+          metodologiaPortafolio={proyecto.metodologiaPortafolio}
+          vistaPreviaPortafolio={proyecto.vistaPreviaPortafolio}
+          codigoPortafolio={proyecto.codigoPortafolio}
         />
       ))}
     </>
