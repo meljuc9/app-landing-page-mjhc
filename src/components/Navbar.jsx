@@ -34,22 +34,22 @@ export default function Navbar() {
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <Link smooth spy to="inicio">
-                <span className="ml-2 text-white text-2xl " id="textNav">Inicio</span>
+                <span className=" ml-2 text-fuchsia-900 bg-white text-2 p-3 rounded-pill fw-bold" id="textNav">Inicio</span>
               </Link>
               <Link smooth spy to="perfil">
-                <span className="ml-2 text-white text-2xl " id="textNav">Perfil</span>
+                <span className=" ml-2 text-fuchsia-900 bg-white text-2 p-3 rounded-pill fw-bold" id="textNav">Perfil</span>
               </Link>
               <Link smooth spy to="experiencia">
-                <span className="ml-2 text-white text-2xl " id="textNav">Experiencia</span>
+                <span className=" ml-2 text-fuchsia-900 bg-white text-2 p-3 rounded-pill fw-bold" id="textNav">Experiencia</span>
               </Link>
               <Link smooth spy to="estudios">
-                <span className="ml-2 text-white text-2xl " id="textNav">Estudios</span>
+                <span className=" ml-2 text-fuchsia-900 bg-white text-2 p-3 rounded-pill fw-bold" id="textNav">Estudios</span>
               </Link>
               <Link smooth spy to="portafolio">
-                <span className="ml-2 text-white text-2xl "  id="textNav">Portafolio</span>
+                <span className=" ml-2 text-fuchsia-900 bg-white text-2 p-3 rounded-pill fw-bold"  id="textNav">Portafolio</span>
               </Link>
               <Link smooth spy to="contacto">
-                <span className="ml-2 text-white text-2xl "  id="textNav">Contacto</span>
+                <span className=" ml-2 text-fuchsia-900 bg-white text-2 p-3 rounded-pill fw-bold"  id="textNav">Contacto</span>
               </Link>
             </ul>
           </div>

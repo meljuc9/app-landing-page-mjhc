@@ -1,37 +1,33 @@
 import {} from "../index.css";
 
-export const MyStudys = ({ mr3, badgeWarning, badgePrimary, programa, institucion }) => {
+export const MyStudys = ({ idEstudios, badgeWarningEstudios, badgePrimaryEstudios, programaEstudios, institucionEstudios }) => {
   return (
-    <div className="m-1 bg-white" id="inicio">
-      <ol class="breadcrumb">
-        <li class="badge badge-pill badge-dark" aria-current="page">EDUCACIÓN</li>
-      </ol>
-      <ul class="list-unstyled">
-        <li class="media">
-          <img  class="mr-3" src={mr3} alt="Imagen" width="100"/>
-          <div class="media-body">
-            <span class="badge badge-pill badge-warning">{badgeWarning}</span>
-            <span class="badge badge-pill badge-primary">{badgePrimary}</span>
-            <h5 class="mt-0 mb-1">
-              <b>Programa:</b> {programa}
-            </h5>
-            <h5 class="mt-0 mb-1">
-              <b>Institución:</b> {institucion}
-            </h5>
-          </div>
-          <img  class="mr-3" src={mr3} alt="Imagen" width="100"/>
-          <div class="media-body">
-            <span class="badge badge-pill badge-warning">{badgeWarning}</span>
-            <span class="badge badge-pill badge-primary">{badgePrimary}</span>
-            <h5 class="mt-0 mb-1">
-              <b>Programa:</b> {programa}
-            </h5>
-            <h5 class="mt-0 mb-1">
-              <b>Institución:</b> {institucion}
-            </h5>
-          </div>
-        </li><br />
-      </ul>
+    <div className="card border-0" id="estudios">
+      <br />
+      <div className="card-group">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" className="text-center text-wrap" id="idEstudios">#</th>
+                <th scope="col" className="text-center text-wrap" id="titleColumEstudios">Tipo Educación</th>
+                <th scope="col" className="text-center text-wrap" id="titleColumEstudios">Fecha Culminación</th>
+                <th scope="col" className="text-center text-wrap" id="titleColumEstudios">Programa</th>
+                <th scope="col" className="text-center text-wrap" id="titleColumEstudios">Institución</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" className="text-center" id="idEstudios">{ idEstudios }</th>
+                <td className="text-center" id="datosEstudios">{ badgeWarningEstudios }</td>
+                <td className="text-center" id="datosEstudios">{ badgePrimaryEstudios }</td>
+                <td className="text-center" id="datosEstudios">{ programaEstudios }</td>
+                <td className="text-center" id="datosEstudios">{ institucionEstudios }</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   );
 };

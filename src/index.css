@@ -64,7 +64,6 @@ a {
   margin-left: 1em;
   width: 15em;
   height: 1.8em;
-
 }
 #tituloSecciones{
   float: right;
@@ -209,11 +208,32 @@ a {
 
 /*************************** ESTILOS ESTUDIOS ***************************/
 #estudios{
+  background-color: #520565;
+}
+.table-responsive{
+  width: 95%;
+  margin-left: 1em;
+}
+.table{
+  color: white;
+  font-size: 0.9em;
+}
+#titleColumEstudios{
+  width: 2rem;
   background-color: #C71C81;
 }
-#cardEstudios{
-  width: 90%;
+#idEstudios{
+  background-color: #C71C81;
+  width: 1rem;
+  font-size: 1em;
+  width: 2rem;
 }
+#datosEstudios{
+  background-color: white;
+  color: black;
+  width: 2rem;
+}
+
 /*************************** FIN ESTILOS ESTUDIOS ***************************/
 
 /*************************** ESTILOS PROTAFOLIO ***************************/

@@ -16,21 +16,21 @@ function App() {
       </section>
       <section id="perfil">
         <PerfilPage />
-      </section>
-      <br />  
-      <li
-        class="badge badge-pill badge-primary font-weight-bold rounded-pill"
-        aria-current="page"
-        id="tituloSecciones"
-      >
+      </section><br />  
+      <li class="badge badge-pill badge-primary font-weight-bold rounded-pill"
+        aria-current="page" id="tituloSecciones"> 
         👩🏻‍💻 Experiencia Laboral
       </li>
       <br />
       <br />
       <section id="experiencia">
         <ExperienciaPage />
-      </section>
-      <hr />
+      </section><br /> 
+      <li class="badge badge-pill badge-primary font-weight-bold rounded-pill"
+        aria-current="page" id="tituloSeccionesConColor">
+        👩🏻‍🏫📏 Educación
+      </li>
+      <br />
       <br />
       <section id="estudios">
         <EstudiosPage />
