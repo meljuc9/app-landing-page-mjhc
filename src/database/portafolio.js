@@ -2,6 +2,7 @@ import toDoList from "../assets/toDoList.png";
 import heroes from "../assets/heroes.jpg";
 import clima from "../assets/clima.jpg";
 import landing from "../assets/landing.png";
+import apiHeroes from "../assets/apiHeroes.png";
 
 export const portafolio = [
   {
@@ -39,5 +40,14 @@ export const portafolio = [
     metodologiaPortafolio: "React + BootStrap + Vite + JavaScript + CSS + HTML",
     vistaPreviaPortafolio: "https://app-landing-page-mjhc.web.app/",
     codigoPortafolio: "https://github.com/meljuc9/app-landing-page-mjhc",
+  },
+  {
+    id: 5,
+    imagenPortafolio: apiHeroes,
+    tituloPortafolio: "Api Heroes",
+    descripcionPortafolio: "Api creada como manejo de BD sobre algunos de los súper heroes de marvel y dc",
+    metodologiaPortafolio: "Json + JavaScript",
+    vistaPreviaPortafolio: "https://api-heroes-mjhc.herokuapp.com/",
+    codigoPortafolio: "https://github.com/meljuc9/api-heroes-MJHC",
   },
 ];
