@@ -30,18 +30,19 @@ function App() {
         aria-current="page" id="tituloSeccionesConColor">
         👩🏻‍🏫📏 Educación
       </li>
-      <br />
-      <br />
+      <br /><br />
       <section id="estudios">
         <EstudiosPage />
-      </section>
-      <hr />
+      </section><br />  
+      <li class="badge badge-pill badge-primary font-weight-bold rounded-pill"
+        aria-current="page" id="tituloSecciones"> 
+        🎉 Portafolio
+      </li>
+      <br />
       <br />
       <section id="portafolio">
         <PortafolioPage />
       </section>
-      <hr />
-      <br />
       <section id="contacto">
         <ContactoPage />
       </section>

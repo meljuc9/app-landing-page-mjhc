@@ -4,7 +4,6 @@ import { portafolio } from "../database/portafolio";
 export const PortafolioPage = () => {
   return (
     <>
-    <h1 className='font-bold text-2xl'>Portafolio</h1>
       {portafolio.map((proyecto) => (
         <MyPortafolio
           key={proyecto.id}

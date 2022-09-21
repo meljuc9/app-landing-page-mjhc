@@ -1,7 +1,16 @@
-import React from 'react'
+import { MyContact } from "../components/MyContact";
+import { contacto } from "../database/contacto";
 
 export const ContactoPage = () => {
   return (
-    <h1 className='font-bold text-2xl'>Contacto</h1>
+    <>
+      {contacto.map((contacto) => (
+        <MyContact
+          key={contacto.id}
+          whatsAppContacto={contacto.whatsAppContacto}
+          correoContacto={contacto.correoContacto}
+        />
+      ))}
+    </>
   )
 }

@@ -61,7 +61,7 @@ a {
   background-color: #ff0095;
   color: white;
   margin-left: 1em;
-  width: 15em;
+  width: 18em;
   height: 1.8em;
 }
 #tituloSecciones{
@@ -72,7 +72,7 @@ a {
   background-color: #ff0095;
   color: white;
   margin-right: 1em;
-  width: 15em;
+  width: 18em;
   height: 1.8em;
 }
 /*************************** ESTILOS INICIO ***************************/
@@ -94,10 +94,18 @@ a {
   font-weight: bold;
   text-align: center;
   text-shadow:  0 0 50px;
+  /* animation: myfirst 5s linear 2s infinite alternate;*/
 }
 #presentacion:hover{
   color: #7e00c2;
-}
+}/*
+@keyframes myfirst {
+  0%   {color:red;}
+  25%  {color:yellow;}
+  50%  {color:#ff0095;}
+  75%  {color:green;}
+  100% {color:#690083;}
+}*/
 #saludo{
   font-family: 'Poppins', sans-serif;
   color: #ff0095;
@@ -105,6 +113,7 @@ a {
   font-weight: bold;
   text-align: center;
   text-shadow:  0 0 30px;
+ /* animation: myfirst 5s linear 2s infinite alternate;*/
 }
 #saludo:hover{
   color: #C71C81;
@@ -266,4 +275,39 @@ a {
   width: 30em;
   height: 1.8em;
   text-align: start;
+}
+/*************************** ESTILOS CONTACTO ***************************/
+#contacto{
+  background-color: #520565;
+}
+#btnTelefonoContacto{
+  text-align: center;
+  font-weight: bold;
+  overflow: hidden;
+  color: white;
+  width: 14em;
+  font-size: 1.2em;
+  background-color: #ff0095;
+  border-color: #ff0095;
+  text-shadow:  0 0 30px;
+}
+#btnTelefonoContacto:hover{
+  background-color: #C71C81;
+  border-color: #C71C81;
+}
+#btnCorreoContacto{
+  text-align: center;
+  font-weight: bold;
+  overflow: hidden;
+  color: white;
+  width: 14em;
+  margin-left: 2%;
+  font-size: 1.2em;
+  background-color: #7e00c2;
+  border-color: #7e00c2;
+  text-shadow:  0 0 30px;
+}
+#btnCorreoContacto:hover{
+  background-color: #3D0859;
+  border-color: #3D0859;
 }

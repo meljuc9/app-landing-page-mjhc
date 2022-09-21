@@ -10,11 +10,11 @@ export const MyStart = ({ fotoUrl, saludo, presentacion, descripcion, boton1, bo
           <p className="card-title mx-auto" id="descripcion">{descripcion}</p><br />
           <div className="d-flex justify-content-center">
             <a className="btn btn-primary btn-lg font-weight-bold" href={boton1} type="button"
-              id="btnPerfil">
-              <i class="fa-brands fa-instagram"></i> Perfil
+              id="btnTelefonoContacto">
+              <i className="fa-brands fa-instagram"></i> Perfil
             </a>
             <a className="btn btn-primary btn-lg font-weight-bold" href={boton2} type="button"
-              id="btnGithub">
+              id="btnCorreoContacto">
               <i className="fa-brands fa-github"></i> GitHub
             </a>
           </div> <br />
